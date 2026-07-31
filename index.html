@@ -1,42 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Meri Pehli Website</title>
-    <style>
-    <body>
+  <title>Meri Pehli Website</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      padding: 50px 20px;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    h1, h2 {
+      color: #0077ff;
+    }
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #0077ff;
+      object-fit: cover;
+    }
+    .btn {
+      background: #0077ff;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      margin: 5px;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    input, textarea {
+      width: 250px;
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
   <div class="card">
     <img src="meri-photo.jpg" alt="Zameer ki Photo">
+    
     <h1>Salam! Mera Naam Zameer Ul Hassan Hai</h1>
     <p>Main web developer banna chahta hun 🚀</p>
-    
-    <a href="https://google.com" class="btn">Google Kholo</a>
-    <a href="#" class="btn">Mera Portfolio</a>
+
+    <a href="https://google.com" class="btn" target="_blank">Google Kholo</a>
+    <a href="https://facebook.com" class="btn" target="_blank">Mera Portfolio Dekho</a>
+
+    <h2>Mujhse Rabta Karen</h2>
+    <form action="mailto:u414193163zameer@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="NAME" placeholder="Apna Naam"><br>
+      <input type="email" name="Email" placeholder="Apna Email"><br>
+      <textarea name="Message" placeholder="Apna Message..." rows="4"></textarea><br>
+      <button type="submit" class="btn">Bhejein</button>
+    </form>
   </div>
 </body>
-    <h1>Salam! Mera Naam Zameer Ul Hassan hai</h1>
-    <p>Main web developer banna chahta hun</p>
-
-   <img src="meri-photo.jpg" alt="meri photo" width="150px" style="border-radius: 50%;">
-
-    <br><br>
-<a href="https://www.google.com" target="_blank">
-        <button>Google Kholo</button>
-    </a>
-
-    <br><br>
-    <a href="https://www.facebook.com" target="_blank">
-        <button>Mera Portfolio Dekho</button>
-    </a>
-       <br><br>
-<h2>Mujhse Rabta Karen</h2>
-<form action="mailto:u414193163zameer@gmail.com" method="post" enctype="text/plain">
-<input type="text" name="ZAMEER" placeholder="ZAMEER ul hassan" style="width: 250px;">
-<br><br>                                           
-<input type="email" name="Email" placeholder="u414193163zameer@gmail.com" style="width: 250px;">
-<br><br>
-<textarea name="Salam ZAMEER bhi" placeholder="Assalamualaikum ma ZAMEER hun..." rows="4" style="width: 250px;"></textarea>
-<br><br>
-<button type="submit">Bhejein</button>
-</form>  
-</body>
-</html>
+</html>                                         
