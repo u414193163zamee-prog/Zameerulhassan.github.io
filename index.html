@@ -27,11 +27,12 @@
             border-radius: 8px;
         }
         img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+            max-width: 150px;
+            height: 150px;
+            border-radius: 50%;
             display: block;
             margin: 10px auto;
+            border: 3px solid #333;
         }
         .project {
             background: #e9e9e9;
@@ -39,18 +40,31 @@
             border-radius: 5px;
             margin-top: 10px;
         }
+        .skills {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .skill-tag {
+            background: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
         .btn {
             display: inline-block;
             padding: 10px 15px;
             margin: 5px;
-            background: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
         }
-        .btn:hover {
-            background: #0056b3;
-        }
+        .btn-fb { background: #1877F2; }
+        .btn-ig { background: #E4405F; }
+        .btn-wa { background: #25D366; }
+        .btn:hover { opacity: 0.8; }
         footer {
             text-align: center;
             padding: 15px;
@@ -70,11 +84,20 @@
     <div class="container">
         
         <h2>About Me</h2>
+        <img src="my photo.jpg" alt="Zameer ki Photo">
         <p>
             Main Zameer hun. Mujhe web development seekhne ka bohat shoq hai. 
             Main roz nayi cheez seekh raha hun aur apni skills behtar bana raha hun. 
             Ye meri pehli website hai jo maine khud banai hai.
         </p>
+
+        <h2>My Skills</h2>
+        <div class="skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Responsive Design</span>
+        </div>
 
         <h2>My Projects</h2>
         <div class="project">
@@ -87,14 +110,10 @@
             <a href="https://u414193163zamee-prog.github.io/u4141.github.io/" target="_blank">Live Link Dekhen</a>
         </div>
 
-        <h2>Meri Photo</h2>
-        <img src="my photo.jpg" alt="Zameer ki Photo">
-
         <h2>Mujhse Rabta Karen</h2>
-        <p>Mujhe in links par contact kar sakte hain:</p>
-        <a href="https://www.facebook.com/share/1HWpM6kJik/" target="_blank" class="btn">Facebook</a>
-<a href="https://www.instagram.com/zameer40402026?igsh=OHcxODAwZDlzM3Qy" target="_blank" class="btn">Instagram</a>
-<a href="https://wa.me/923414193163" target="_blank" class="btn">WhatsApp</a>
+        <a href="https://www.facebook.com/share/1HWpM6kJik/" target="_blank" class="btn btn-fb">Facebook</a>
+        <a href="https://www.instagram.com/zameer40402026?igsh=OHcxODAwZDlzM3Qy" target="_blank" class="btn btn-ig">Instagram</a>
+        <a href="https://wa.me/923414193163" target="_blank" class="btn btn-wa">WhatsApp</a>
 
     </div>
 
