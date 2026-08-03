@@ -11,13 +11,32 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            transition: 0.3s; /* Smooth color change */
+        }
+        body.dark {
+            background-color: #121212;
+            color: #e0e0e0;
         }
         header {
             background: #333;
             color: white;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
+        body.dark header { background: #1f1f1f; }
+        .dark-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: white;
+            color: #333;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        body.dark .dark-btn { background: #333; color: white; }
         .container {
             width: 90%;
             max-width: 800px;
@@ -26,6 +45,7 @@
             background: white;
             border-radius: 8px;
         }
+        body.dark .container { background: #1e1e1e; }
         img {
             max-width: 150px;
             height: 150px;
@@ -40,6 +60,7 @@
             border-radius: 5px;
             margin-top: 10px;
         }
+        body.dark .project { background: #2a2a2a; }
         .skills {
             display: flex;
             gap: 10px;
@@ -72,6 +93,7 @@
             color: white;
             margin-top: 20px;
         }
+        body.dark footer { background: #1f1f1f; }
     </style>
 </head>
 <body>
@@ -79,6 +101,7 @@
     <header>
         <h1>Zameer</h1>
         <p>Aspiring Web Developer</p>
+        <button class="dark-btn" onclick="toggleDark()">🌙 Dark</button>
     </header>
 
     <div class="container">
@@ -95,6 +118,7 @@
         <div class="skills">
             <span class="skill-tag">HTML</span>
             <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">GitHub</span>
             <span class="skill-tag">Responsive Design</span>
         </div>
@@ -104,8 +128,8 @@
             <h3>1. Meri Personal Website</h3>
             <p><b>2026</b></p>
             <p>
-                HTML aur CSS use karke responsive website banai. 
-                GitHub Pages pe free me host ki aur mobile ke liye optimize ki.
+                HTML, CSS aur JavaScript use karke responsive website banai. 
+                GitHub Pages pe free me host ki aur Dark Mode add kiya.
             </p>
             <a href="https://u414193163zamee-prog.github.io/u4141.github.io/" target="_blank">Live Link Dekhen</a>
         </div>
@@ -121,5 +145,12 @@
         <p>© 2026 Zameer. All Rights Reserved.</p>
     </footer>
 
+<script>
+    function toggleDark() {
+        document.body.classList.toggle('dark');
+    }
+</script>
+
 </body>
 </html>
+        
