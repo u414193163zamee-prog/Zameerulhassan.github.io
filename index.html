@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zameer - Web Developer</title>
+    <title>ZAMEER'S STORE - Web Developer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,7 +39,7 @@
         body.dark .dark-btn { background: #333; color: white; }
         .container {
             width: 90%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
             background: white;
@@ -94,13 +94,54 @@
             margin-top: 20px;
         }
         body.dark footer { background: #1f1f1f; }
+
+        /* NAYA CODE STORE KE LIYE */
+        .store-title {
+            text-align: center; 
+            margin: 40px 0 20px 0; 
+            font-size: 32px;
+            color: #007bff;
+        }
+        .products {
+            display: flex; 
+            gap: 20px; 
+            justify-content: center; 
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .product-card {
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            width: 250px; 
+            text-align: center;
+            border-radius: 8px;
+            background: white;
+        }
+        body.dark .product-card { background: #2a2a2a; border-color: #444; }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            border: none;
+            object-fit: cover;
+        }
+        .buy-btn {
+            background: black; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .buy-btn:hover { background: #007bff; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Zameer</h1>
-        <p>Aspiring Web Developer</p>
+        <h1>ZAMEER'S STORE</h1>
+        <p>Aspiring Web Developer & Shop Website Designer</p>
         <button class="dark-btn" onclick="toggleDark()">🌙 Dark</button>
     </header>
 
@@ -109,10 +150,36 @@
         <h2>About Me</h2>
         <img src="my photo.jpg" alt="Zameer ki Photo">
         <p>
-            Main Zameer hun. Mujhe web development seekhne ka bohat shoq hai. 
+            Main Zameer hun. Main responsive shop websites banata hun HTML, CSS aur JavaScript me. 
             Main roz nayi cheez seekh raha hun aur apni skills behtar bana raha hun. 
-            Ye meri pehli website hai jo maine khud banai hai.
+            Ye meri portfolio website hai.
         </p>
+
+        <h2 class="store-title">🛍️ Featured Products</h2>
+        <div class="products">
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" alt="Mobile">
+                <h3>iPhone 15 Pro</h3>
+                <p><b>$999</b></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Shoes">
+                <h3>Nike Running Shoes</h3>
+                <p><b>$120</b></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Watch">
+                <h3>Smart Watch</h3>
+                <p><b>$250</b></p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+        </div>
 
         <h2>My Skills</h2>
         <div class="skills">
@@ -121,20 +188,22 @@
             <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">GitHub</span>
             <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Shop Website</span>
         </div>
 
         <h2>My Projects</h2>
         <div class="project">
-            <h3>1. Meri Personal Website</h3>
+            <h3>1. ZAMEER'S STORE - Ecommerce Website</h3>
             <p><b>2026</b></p>
             <p>
-                HTML, CSS aur JavaScript use karke responsive website banai. 
-                GitHub Pages pe free me host ki aur Dark Mode add kiya.
+                Responsive Shop Website banai HTML/CSS/JS se. Dark Mode aur Mobile Friendly hai. 
+                GitHub Pages pe free me host ki hai.
             </p>
             <a href="https://u414193163zamee-prog.github.io/u4141.github.io/" target="_blank">Live Link Dekhen</a>
         </div>
 
         <h2>Mujhse Rabta Karen</h2>
+        <p><b>Available for Freelance Work:</b> zameer@email.com</p>
         <a href="https://www.facebook.com/share/1HWpM6kJik/" target="_blank" class="btn btn-fb">Facebook</a>
         <a href="https://www.instagram.com/zameer40402026?igsh=OHcxODAwZDlzM3Qy" target="_blank" class="btn btn-ig">Instagram</a>
         <a href="https://wa.me/923414193163" target="_blank" class="btn btn-wa">WhatsApp</a>
@@ -142,7 +211,7 @@
     </div>
 
     <footer>
-        <p>© 2026 Zameer. All Rights Reserved.</p>
+        <p>© 2026 ZAMEER'S STORE. All Rights Reserved. | Available for Freelance Work</p>
     </footer>
 
 <script>
@@ -153,4 +222,3 @@
 
 </body>
 </html>
-        
